@@ -1,0 +1,11 @@
+"""Retrieve settings from settings.ini"""
+
+[settings]
+
+HOST=hostname
+COMMUNITY=community_string
+IFINDEX=4
+
+INFLUXDB_URL=http://100.100.100.123:8086/write?db=mydb
+INFLUXDB_USER=influxdb_user_name
+INFLUXDB_PASSWORD=influxdb_password

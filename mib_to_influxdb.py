@@ -9,8 +9,8 @@ import settings
 
 session = Session(hostname=settings.HOST, community=settings.COMMUNITY, version=2)
 
-in_octets = session.get(f"ifHCInOctets.{settings.IFINDEX}")
-out_octets = session.get(f"ifHCOutOctets.{settings.IFINDEX}")
+in_octets = session.get(f"{settings.IFHCINOCTETS}.{settings.IFINDEX}")
+out_octets = session.get(f"{settings.IFHCOUTOCTETS}.{settings.IFINDEX}")
 
 print(f"Octets in: {in_octets.value}")  # pylint: disable=no-member
 print(f"Octets out: {out_octets.value}")  # pylint: disable=no-member
